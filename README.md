@@ -4,11 +4,11 @@ These PowerShell scripts will allow you to connect to your Office 365 tenant and
 
 ## Prerequisites
 
-#### Setup Environment
+### Setup Environment
 
 If you have not previously connected to Office 365 with PowerShell, please follow these setup instructions:  [Connect to Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-#### Install Modules
+### Install Modules
 
 You can use the [MSOL](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0) (Microsoft Online Data Service) module or the newer [AzureAD](https://www.powershellgallery.com/packages/AzureAD/2.0.0.131) (Azure Active Directory) module.
 
@@ -16,7 +16,7 @@ There are minimal differences to the main PowerShell script to use either one. (
 
 ## Configuration
 
-#### Save Encrypted Password
+### Save Encrypted Password
 
 To automate the execution of the main PowerShell script, it is necessary to store the password in an encrypted file so that the login prompt does not appear.  You can run the [SaveSecurePassword](Scripts/SaveSecurePassword.ps1) PowerShell script to save your password in a directory of your choosing.  The example path is `C:\PowerShell\SecureStrings`.
 
@@ -32,7 +32,7 @@ read-host -prompt "Enter password to be encrypted in O365SecurePassword.txt " -a
 | :--- | :---
 | [SaveSecurePassword](Scripts/SaveSecurePassword.ps1) | Script to save secure password
 
-#### Customize main PowerShell script
+### Customize main PowerShell script
 
 At this point, you will need to modify the script to meet your local environment.  Below are the items that will need customized:
  1. Set secure password folder\file name in line 2
